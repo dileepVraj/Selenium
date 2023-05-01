@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+   <test name = "OrangeHrmLoginValidation">
+       <parameter name="browserName" value="chrome"/>
+       <parameter name="author" value="Dileep"/>
+       <classes>
+           <class name="testNG.Q_IntegrationOfExtentReportsWithTestNG.TestCases">
+               <methods>
+                   <include name="orangeHrmLogin"/>
+               </methods>
+           </class>
+       </classes>
+   </test>
+
+    <test name="GoogleFailingTest">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="author" value="John"/>
+        <classes>
+            <class name="testNG.Q_IntegrationOfExtentReportsWithTestNG.TestCases">
+                <methods>
+                    <include name="deliberatelyFailing"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

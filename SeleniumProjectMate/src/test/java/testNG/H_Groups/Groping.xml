@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <groups>
+        <run>
+            <include name="smoke"/>
+            <exclude name="regression"/>
+        </run>
+    </groups>
+    <test name="groupingSampleTest">
+        <groups>
+            <run>
+                <include name = "regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testNG.H_Groups.GroupingSample"/>
+            <class name="testNG.H_Groups.GroupingSample1"/>
+        </classes>
+    </test>
+</suite>

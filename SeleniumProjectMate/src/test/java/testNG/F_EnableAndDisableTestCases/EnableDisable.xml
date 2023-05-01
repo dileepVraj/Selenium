@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name = "login verification">
+        <parameter name="loginStatus" value="true"/>
+        <classes>
+            <class name="testNG.F_EnableAndDisableTestCases.EnableDisableSample">
+                <methods>
+                    <include name="sayHello"/>
+                    <include name="login"/>
+                    <include name="terminate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name = "my info verification" enabled="false">
+        <parameter name="myInfo" value="true"/>
+        <classes>
+            <class name="testNG.F_EnableAndDisableTestCases.EnableDisableSample">
+                <methods>
+                    <include name="sayHello"/>
+                    <include name="verifyMyInfo"/>
+                    <include name="terminate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
